@@ -1,0 +1,9 @@
+- name: update repository debian
+  apt:
+    update_cache: true
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
+
+- name: update repository redhat
+  yum:
+    update_cache: true
+  when: ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux"

@@ -1,0 +1,8 @@
+[awx]
+#34.134.62.73
+34.28.227.188
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/id_rsa

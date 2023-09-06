@@ -1,0 +1,7 @@
+- name: Setup Ansible AWX
+  hosts: awx 
+  become: yes
+  roles:
+    - roles/update-os
+    - roles/setup-awx
+    
